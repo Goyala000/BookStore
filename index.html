@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/e3252cabaa.js" crossorigin="anonymous"></script>
+    <title>Book Store</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+        h2 {
+            text-align: center;
+            padding-top: 15px;
+        }
+        #btn {
+            border: none;
+            background: #404040;
+            color: #ffffff !important;
+            font-weight: 100;
+            text-transform: uppercase;
+            border-radius: 6px;
+            display: inline-block;
+            transition: all 0.3s ease 0s;
+        }
+        #btn:hover {
+            color: #404040 !important;
+            font-weight: 700 !important;
+            letter-spacing: 3px;
+            background: none;
+            transition: all 0.3s ease 0s;
+        }
+        .alert, .error{
+            padding: 10px;
+            margin: 5px 0px 10px 5px;
+            background: red;
+            color: #fff;
+        }
+        .success {
+            padding: 10px;
+            margin: 5px 0px 10px 5px;
+            background: green;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h2 id="title">Book Store</h2>
+                <form id="book">
+                    <div class="row">
+                        <label for="bName">Book Title</label>
+                        <input type="text" id="bName" class="u-full-width">
+                    </div>
+                    <div class="row">
+                        <label for="author">Author</label>
+                        <input type="text" id="author" class="u-full-width">
+                    </div>
+                    <div class="row">
+                        <label for="isbn">ISBN</label>
+                        <input type="text" id="isbn" class="u-full-width">
+                    </div>
+                    <input type="submit" id="btn" value="SUBMIT" class="u-full-width">
+                </form>
+        </div>
+        <div class="row">
+            <table class="u-full-width">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN</th>
+                    </tr>
+                </thead>
+                <tbody id="bookList">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
